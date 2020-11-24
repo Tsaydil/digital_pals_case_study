@@ -19,10 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef670019-bb33-420b-a982-23e983f1c83e" name="Default Changelist" comment="">
+    <list default="true" id="ef670019-bb33-420b-a982-23e983f1c83e" name="Default Changelist" comment="Shopping cart added to navigation bar">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bannerImage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bannerImage2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bannerImage3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/digital_pals_case_study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/digital_pals_case_study.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +39,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -48,10 +55,17 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -61,7 +75,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606154961660</updated>
-      <workItem from="1606154962910" duration="5106000" />
+      <workItem from="1606154962910" duration="6414000" />
+      <workItem from="1606201200169" duration="7193000" />
+      <workItem from="1606248816124" duration="6945000" />
     </task>
     <task id="LOCAL-00001" summary="HTML template added">
       <created>1606155117658</created>
@@ -84,7 +100,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606160301529</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Flickity JS and CSS files added">
+      <created>1606168578275</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606168578275</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Shopping cart added to navigation bar">
+      <created>1606202277314</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606202277314</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,24 +130,27 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="HTML template added" />
     <MESSAGE value="JQuery library added" />
-    <option name="LAST_COMMIT_MESSAGE" value="JQuery library added" />
+    <MESSAGE value="Flickity JS and CSS files added" />
+    <MESSAGE value="Shopping cart added to navigation bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Shopping cart added to navigation bar" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="209" y="23" width="915" height="725" key="CommitChangelistDialog2" timestamp="1606160301271">
+    <state x="209" y="23" width="915" height="725" key="CommitChangelistDialog2" timestamp="1606202276863">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="209" y="23" width="915" height="725" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1606160301271" />
+    <state x="209" y="23" width="915" height="725" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1606202276863" />
     <state x="141" y="39" key="SettingsEditor" timestamp="1606160014790">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="141" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1606160014790" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1606160307581">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1606202283868">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1606160307581" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1606202283868" />
   </component>
 </project>

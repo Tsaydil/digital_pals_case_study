@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <title>TSA'S Website</title>
+    <script>
+        $(document).ready(function (){
+            $("#cart").click(function (){
+                $(".shopping_cart").fadeToggle("fast")
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+<nav>
+    <div class="navbar">
+        <ul class="navbar_left">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">Products</a></li>
+        </ul>
+
+        <ul class="navbar_right">
+            <li><a href="#" id="cart"><i class="fa fa-shopping-cart cart_icon"></i><span class="badge">3</span> </a> </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="navbar">
+    <div class="shopping_cart">
+        <div class="cart_header">
+            <i class="fa fa-shopping-cart cart_icon"></i><span class="badge">3</span>
+            <div class="cart_total">
+                <span class="lighter-text">Total:</span>
+                <span class="main_color_text">$2345</span>
+            </div>
+        </div> <!-- End of shopping cart header -->
+
+        <ul class="cart_items">
+            <li class="clearfix">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item1.jpg" alt="item1" />
+                <span class="item_name">Sony DSC</span>
+                <span class="item_price">$849</span>
+                <span class="item_quantity">Quantity: 1</span>
+            </li>
+
+            <li class="clearfix">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item2.jpg" alt="item1" />
+                <span class="item_name">KS Automatic Mechanic...</span>
+                <span class="item_price">$1,249.99</span>
+                <span class="item_quantity">Quantity: 01</span>
+            </li>
+        </ul>
+
+        <a href="#" class="btn">Checkout</a>
+    </div> <!-- End of shopping cart -->
+</div> <!-- End of navbar -->
+
+<h1>Welcome to TSAS!</h1>
+
+</body>
+</html>
