@@ -13,7 +13,17 @@
             $("#cart").click(function (){
                 $(".shopping_cart").fadeToggle("fast")
             });
-
+            $.getJSON('https://fakestoreapi.com/products/1', function(jd){
+                $('#details_name').append('<p>'+jd.title+'</p>');
+                $('#details_price').append('<p>$'+jd.price+'</p>');
+                $('.top').append('<img src="'+jd.image+'" class="top_img"/>')
+                //$('.container .top').css("background",'url('+jd.image+')')
+                //$('#details_price').append('<p>'+jd.price+'</p>');
+                //$('.test_div').append('<p> id: ' + jd.id + '</p>');
+                //$('.test_div').append('<p> title: ' + jd.title + '</p>');
+                //$('.test_div').append('<p> price: ' + jd.price + '</p>');
+                //$('.test_div').append('<p> category: ' + jd.category + '</p>');
+            });
         });
     </script>
 </head>
@@ -61,6 +71,37 @@
         <a href="#" class="btn">Checkout</a>
     </div> <!-- End of shopping cart -->
 </div> <!-- End of navbar -->
+
+<div class="wrapper">
+    <div class="container">
+        <div class="top"></div>
+        <div class="bottom">
+            <div class="left">
+                <div class="details">
+                    <p id="details_name"></p>
+                    <p id="details_price"></p>
+                </div>
+                <div class="buy"><i class="fa fa-cart-plus"></i></div>
+            </div>
+            <div class="right">
+                <div class="done"><i class="material-icons">done</i></div>
+                <div class="details">
+                    <h1>Chair</h1>
+                    <p>Added to your cart</p>
+                </div>
+                <div class="remove"><i class="material-icons">clear</i></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flickity_section">
+
+</div>
+
+<div class="test_div">
+    <!--<img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="test1"/>-->
+</div>
 
 <h1>Welcome to TSAS!</h1>
 

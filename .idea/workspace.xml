@@ -19,16 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef670019-bb33-420b-a982-23e983f1c83e" name="Default Changelist" comment="Shopping cart added to navigation bar">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bannerImage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bannerImage2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bannerImage3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/digital_pals_case_study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/digital_pals_case_study.iml" afterDir="false" />
+    <list default="true" id="ef670019-bb33-420b-a982-23e983f1c83e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +71,9 @@
       <updated>1606154961660</updated>
       <workItem from="1606154962910" duration="6414000" />
       <workItem from="1606201200169" duration="7193000" />
-      <workItem from="1606248816124" duration="6945000" />
+      <workItem from="1606248816124" duration="7110000" />
+      <workItem from="1606289516875" duration="1650000" />
+      <workItem from="1606317846442" duration="9369000" />
     </task>
     <task id="LOCAL-00001" summary="HTML template added">
       <created>1606155117658</created>
@@ -114,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606202277314</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="New changes including shopping cart and banner image">
+      <created>1606256168404</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606256168404</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,20 +140,25 @@
     <MESSAGE value="JQuery library added" />
     <MESSAGE value="Flickity JS and CSS files added" />
     <MESSAGE value="Shopping cart added to navigation bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Shopping cart added to navigation bar" />
+    <MESSAGE value="New changes including shopping cart and banner image" />
+    <option name="LAST_COMMIT_MESSAGE" value="New changes including shopping cart and banner image" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="209" y="23" width="915" height="725" key="CommitChangelistDialog2" timestamp="1606202276863">
+    <state x="209" y="23" width="915" height="725" key="CommitChangelistDialog2" timestamp="1606256167755">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="209" y="23" width="915" height="725" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1606202276863" />
+    <state x="209" y="23" width="915" height="725" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1606256167755" />
     <state x="141" y="39" key="SettingsEditor" timestamp="1606160014790">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="141" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1606160014790" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1606202283868">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1606256174308">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1606202283868" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1606256174308" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1606328347620">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1606328347620" />
   </component>
 </project>
