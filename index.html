@@ -12,18 +12,73 @@
         $(document).ready(function (){
             $("#cart").click(function (){
                 $(".shopping_cart").fadeToggle("fast")
-            });
-            $.getJSON('https://fakestoreapi.com/products/1', function(jd){
-                $('#details_name').append('<p>'+jd.title+'</p>');
-                $('#details_price').append('<p>$'+jd.price+'</p>');
-                $('.top').append('<img src="'+jd.image+'" class="top_img"/>')
-                //$('.container .top').css("background",'url('+jd.image+')')
-                //$('#details_price').append('<p>'+jd.price+'</p>');
-                //$('.test_div').append('<p> id: ' + jd.id + '</p>');
-                //$('.test_div').append('<p> title: ' + jd.title + '</p>');
-                //$('.test_div').append('<p> price: ' + jd.price + '</p>');
-                //$('.test_div').append('<p> category: ' + jd.category + '</p>');
-            });
+            }); //For showing and hiding cart with a click
+            $.getJSON('https://fakestoreapi.com/products', function (data){
+                let product = '';
+                $.each(data, function (key,value){
+                    product +=  '<div class="wrapper">' +
+                                '<div class="container">' +
+                                '<div class="top"><img src="'+value.image+'" class="top_img"/></div>' +
+                                '<div class="bottom">' +
+                                '<div class="left">' +
+                                '<div class="details">' +
+                                '<p id="details_name">'+value.title+'</p>' +
+                                '<p id="details_price">$'+value.price+'</p>'+
+                                '</div>'+
+                                '<div class="buy"><i class="fa fa-cart-plus"></i></div>'+
+                                '</div>'+
+                                '<div class="right">' +
+                                '<div class="done"><i class="fa fa-check"></i></div>'+
+                                ' <div class="details">'+
+                                '<h1>Chair</h1>'+
+                                '<p>Added to your cart</p>'+
+                                '</div>'+
+                                '<div class="remove"><i class="material-icons">clear</i></div>'+
+                                '</div>'+
+                                '</div>'+
+                                '</div>'+
+                                '</div>';
+                });
+                $('.grid_container').html(product);
+            }); // For creating cards dynamically
+
+            $(document).on("click", "div.buy", function (){
+                let title = $(this).prev().children().prev().text();
+                let price = $(this).prev().children().next().text();
+                let product = '';
+                product +=  '<li class="clearfix">' +
+                            '<span class="item_name">'+title+'</span>' +
+                            '<span class="item_price">'+price+'</span>'+
+                            '<button class="remove_btn">Remove</button>'+
+                            '</li>';
+                $('.cart_items').append(product);
+            }); // If a user clicks add to cart at any card it will add it to cart
+            $(document).on("click", "button.remove_btn", function (){
+                $(this).parent().remove();
+            }) // For removing element from cart
+
+            $('.carousel').flickity({
+                cellAlign: 'center',
+                wrapAround: true
+            }); // Creating slider
+            for (let i = 0;i < 4;i++){
+                $.getJSON('https://fakestoreapi.com/products/'+(i+1), function (jd){
+                    $('#cell-'+(i+1)+' .left').append('<img src="'+jd.image+'"class="top_img"/>');
+                    $('#cell-'+(i+1)+' .right .top').append('<p id="details_name">'+jd.title+'</p>');
+                    $('#cell-'+(i+1)+' .right .top').append('<p id="details_price">$'+jd.price+'</p>')
+                });
+            } // It will add 4 product to slider
+            $('.buy-btn').click(function (){
+                let title = $(this).parent().prev().children().prev().text();
+                let price = $(this).parent().prev().children().next().text();
+                let product = '';
+                product +=  '<li class="clearfix">' +
+                            '<span class="item_name">'+title+'</span>' +
+                            '<span class="item_price">'+price+'</span>'+
+                            '<button class="remove_btn">Remove</button>'+
+                            '</li>';
+                $('.cart_items').append(product);
+            }); // If user clicks add to cart button at slider it will add it to cart
         });
     </script>
 </head>
@@ -37,73 +92,62 @@
         </ul>
 
         <ul class="navbar_right">
-            <li><a href="#" id="cart"><i class="fa fa-shopping-cart cart_icon"></i><span class="badge">3</span> </a> </li>
+            <li><a href="#" id="cart"><i class="fa fa-shopping-cart cart_icon"></i></a></li>
         </ul>
     </div>
-</nav>
+</nav> <!--Left side of navbar-->
 
 <div class="navbar">
     <div class="shopping_cart">
-        <div class="cart_header">
-            <i class="fa fa-shopping-cart cart_icon"></i><span class="badge">3</span>
-            <div class="cart_total">
-                <span class="lighter-text">Total:</span>
-                <span class="main_color_text">$2345</span>
-            </div>
-        </div> <!-- End of shopping cart header -->
 
-        <ul class="cart_items">
-            <li class="clearfix">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item1.jpg" alt="item1" />
-                <span class="item_name">Sony DSC</span>
-                <span class="item_price">$849</span>
-                <span class="item_quantity">Quantity: 1</span>
-            </li>
-
-            <li class="clearfix">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item2.jpg" alt="item1" />
-                <span class="item_name">KS Automatic Mechanic...</span>
-                <span class="item_price">$1,249.99</span>
-                <span class="item_quantity">Quantity: 01</span>
-            </li>
-        </ul>
+        <ul class="cart_items"></ul>
 
         <a href="#" class="btn">Checkout</a>
     </div> <!-- End of shopping cart -->
 </div> <!-- End of navbar -->
 
-<div class="wrapper">
-    <div class="container">
-        <div class="top"></div>
-        <div class="bottom">
-            <div class="left">
-                <div class="details">
-                    <p id="details_name"></p>
-                    <p id="details_price"></p>
-                </div>
-                <div class="buy"><i class="fa fa-cart-plus"></i></div>
-            </div>
-            <div class="right">
-                <div class="done"><i class="material-icons">done</i></div>
-                <div class="details">
-                    <h1>Chair</h1>
-                    <p>Added to your cart</p>
-                </div>
-                <div class="remove"><i class="material-icons">clear</i></div>
+
+<div class="grid_container"></div> <!--Grid for cards-->
+
+
+<div class="carousel">
+    <div class="carousel-cell" id="cell-1">
+        <div class="left"></div>
+        <div class="right">
+            <div class="top"></div>
+            <div class="bottom">
+                <button class="buy-btn"><i class="fa fa-cart-plus fa-4x"></i></button>
             </div>
         </div>
     </div>
-</div>
-
-<div class="flickity_section">
-
-</div>
-
-<div class="test_div">
-    <!--<img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="test1"/>-->
-</div>
-
-<h1>Welcome to TSAS!</h1>
+    <div class="carousel-cell" id="cell-2">
+        <div class="left"></div>
+        <div class="right">
+            <div class="top"></div>
+            <div class="bottom">
+                <button class="buy-btn"><i class="fa fa-cart-plus fa-4x"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-cell" id="cell-3">
+        <div class="left"></div>
+        <div class="right">
+            <div class="top"></div>
+            <div class="bottom">
+                <button class="buy-btn"><i class="fa fa-cart-plus fa-4x"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-cell" id="cell-4">
+        <div class="left"></div>
+        <div class="right">
+            <div class="top"></div>
+            <div class="bottom">
+                <button class="buy-btn"><i class="fa fa-cart-plus fa-4x"></i></button>
+            </div>
+        </div>
+    </div>
+</div> <!--creating carousel and its cells-->
 
 </body>
 </html>
